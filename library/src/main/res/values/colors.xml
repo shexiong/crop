@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cropiwa_default_overlay_color">#00000000</color>
+    <color name="cropiwa_default_border_color">#f55555</color>
+    <color name="cropiwa_default_corner_color">#f55555</color>
+    <color name="cropiwa_default_grid_color">#99f55555</color>
+
+    <color name="crop_color_progress_wheel_line">#808080</color>
+    <color name="crop_color_middle_line">#FF6E40</color>
+</resources>

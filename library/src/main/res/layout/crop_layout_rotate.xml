@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/black">
+
+    <com.steelkiwi.cropiwa.HorizontalProgressWheelView
+        android:id="@+id/rotate_scroll_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/wrapper_rotate_by_angle"
+        android:layout_toRightOf="@+id/wrapper_reset_rotate"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/wrapper_reset_rotate"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还原"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wrapper_rotate_by_angle"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/crop_ic_angle" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
