@@ -116,10 +116,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadImage(float rotate) {
         if(TextUtils.isEmpty(path)){
-            // path = getIntent().getStringExtra(IMAGE_PATH);
-
-            path = "file://" + new File(Environment.getExternalStorageDirectory(), "a.jpg").getAbsolutePath();
-
+            path = getIntent().getStringExtra(IMAGE_PATH);
+            // path = "file://" + new File(Environment.getExternalStorageDirectory(), "a.jpg").getAbsolutePath();
             if(TextUtils.isEmpty(path)){
                 return;
             }
